@@ -1,14 +1,14 @@
 import { Route, Routes } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import View from "../components/View";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<View />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
