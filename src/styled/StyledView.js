@@ -13,6 +13,33 @@ export const Header = styled.header`
     }
 `
 
+export const StyledFilter = styled.div`
+    height: 70px;
+    width: 1000px;
+    background-color: white;
+    position: absolute;
+    border-radius: 5px;
+    margin: 65px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0px 20px;
+    align-items: center;
+    @media screen and (max-width: 1000px) {
+        height: 100px;
+        width: 280px;
+        background-color: white;
+        position: absolute;
+        border-radius: 5px;
+        margin: 50px 20px;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        padding:0px 20px;
+        align-items: center; 
+    }
+`
+
 export const Container = styled.div`
     background-color:hsl(180, 31%, 95%);
     display: flex;
@@ -168,4 +195,20 @@ export const ButtonStyled = styled.button`
     font-weight: 700;
     margin: 5px;
     background-color:white;
+`
+export const Span = styled.span`
+    background-color: hsl(180, 29%, 50%);
+    padding: 0px 3px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    &:hover{
+        background-color: hsl(180, 14%, 20%);
+    }
+`
+export const Container1 = styled.div`
+    display: flex;
+    justify-content: center;
 `
